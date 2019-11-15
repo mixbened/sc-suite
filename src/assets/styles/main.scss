@@ -1,3 +1,18 @@
 @import 'custom.scss';
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/bootstrap-vue/src/index.scss';
+
+.section {
+    margin: 10% 0;
+}
+
+.subtitle {
+    color: var(--dark);
+    letter-spacing: .1em;
+    border-bottom: 1px solid #2a3758;
+}
+
+.lottie {
+    // margin: 0 10%;
+    // width: 50%;
+}

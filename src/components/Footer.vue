@@ -9,10 +9,10 @@
   </footer>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 footer {
   width: 100%;
-  margin-top: 6rem;
+  margin-top: 1rem;
   background-color: #f5f5f5;
 }
 </style>

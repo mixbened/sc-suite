@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="my-4 mb-5">Kurse</h1>
+    <Title title="Kurse" subtitle="subtitle"/>
       <li v-for="edge in $page.courses.edges" :key="edge.id">
         Article: {{ edge.node.title }}
         <g-link :to="edge.node.path">Zum Kurs</g-link>
@@ -24,9 +24,14 @@ query Kurs {
 </page-query>
 
 <script>
-  export default {
+import Title from '../components/Title'
+
+export default {
     metaInfo: {
       title: 'Kurse'
+    },
+    components: {
+      Title
     }
   }
 </script>

@@ -1,10 +1,16 @@
 <template>
   <Layout>
     <Title title="News" subtitle="subtitle"/>
-      <li v-for="edge in $page.posts.edges" :key="edge.id">
-        Article: {{ edge.node.title }}
-        <g-link :to="edge.node.path">Zum Artikel</g-link>
-      </li>
+    <section class="section">
+      <b-container>
+        <b-row>
+          <b-col v-for="edge in $page.posts.edges" cols="4" :key="edge.id" class="my-4 px-4">
+            <ArticleCard :title="edge.node.title" :date="edge.node.date" :path="edge.node.path" :titleImage="edge.node.titleImage" :author="edge.node.author"/>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
+    <Newsletter />
   </Layout>
 </template>
 
@@ -17,6 +23,12 @@ query Post {
           id
           date
           path
+          author
+          titleImage {
+            file {
+              url
+            }
+          }
         }
       }
   }
@@ -25,13 +37,17 @@ query Post {
 
 <script>
 import Title from '../components/Title'
+import ArticleCard from '../components/ArticleCard'
+import Newsletter from '../components/Newsletter'
 
 export default {
     metaInfo: {
       title: 'Blog'
     },
     components: {
-      Title
+      Title,
+      ArticleCard,
+      Newsletter
     }
   }
 </script>
