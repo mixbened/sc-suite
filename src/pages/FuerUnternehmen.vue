@@ -42,51 +42,78 @@
         </b-row>
       </section>
       <section class="section">
-          <b-container class="text-center">
-            <h1>Coding in One Day</h1>
-            <h6 class="mx-5">Ziel von Code in one day ist es, ein interdisziplinäres Grundverständnis für digital-technische Themen im Unternehmen aufzubauen, um einen digitalen Denkansatz zu etablieren, ohne den Ansatz einer klassischen Weiterbildung zu verfolgen.</h6>
+          <b-container class="text-center my-5">
+            <h1>CODE.INONEDAY</h1>
+            <p class="p-2 px-5">Innerhalb von einem Tag zum Programmierer? So schön ist es nicht, aber das ist auch nicht unser Anspruch. Innerhalb eines Tages-Workshops lernen wir mit einem Team eine Programmiersprache kennen und entwickeln anhand dieser eigene Lösungen. From Scratch!</p>
           </b-container>
           <b-container>
             <b-row>
               <b-col cols="6" class="d-flex align-items-center">
-                <img class="img-fluid" alt="teamwork" src="../assets/images/course1.jpg" round/>
+                <img class="img-fluid rounded" alt="teamwork" src="../assets/images/course1.jpg" round/>
               </b-col>
               <b-col cols="6">
-                <b-row class="py-5">
-                  <b-col cols="3" class="text-center"><i class="fab fa-python fa-2x text-primary"></i></b-col>
+                <b-row class="py-4">
+                  <b-col cols="3" class="text-right"><i class="fas fa-database fa-2x text-primary"></i></b-col>
                   <b-col cols="9" class="d-flex align-items-center">
-                    <p>Zusammen die digitale Zukunft gestalten</p>
+                    <small>Moderne Technologien, die eine direkte Anwendung im Arbeitsalltag auch eines Nicht-ITler ermöglichen und so die Arbeitskraft stärken.</small>
                   </b-col>
                 </b-row>
-                <b-row class="py-5">
-                  <b-col cols="3" class="text-center"><i class="fab fa-python fa-2x text-primary"></i></b-col>
+                <b-row class="py-4">
+                  <b-col cols="3" class="text-right"><i class="fas fa-chalkboard-teacher fa-2x text-primary"></i></b-col>
                   <b-col cols="9" class="d-flex align-items-center">
-                    <p>Zusammen die digitale Zukunft gestalten</p>
+                    <small>Vor-Ort Kurse, welche einen hohen Lerneffekt verursachen, welcher mit Online-Materialien im Anschluss weiter verstärkt werden kann.</small>
                   </b-col>
                 </b-row>
-                <b-row class="py-5">
-                  <b-col cols="3" class="text-center"><i class="fab fa-python fa-2x text-primary"></i></b-col>
+                <b-row class="py-4">
+                  <b-col cols="3" class="text-right"><i class="fas fa-laptop-code fa-2x text-primary"></i></b-col>
                   <b-col cols="9" class="d-flex align-items-center">
-                    <p>Zusammen die digitale Zukunft gestalten</p>
+                    <small>Prakrtische Anwendung der Themen direkt am eigenen Computer, aber doch keine klassische IT-Schulung.</small>
                   </b-col>
                 </b-row>
               </b-col>
             </b-row>
           </b-container>
-      </section>
-      <section class="section">
-        <div class="card p-3">
-          <b-container>
+          <b-container class="my-5">
             <b-row>
               <b-col cols="6">
-                <img class="img-fluid" alt="teamwork" src="../assets/images/course3.jpg">
+                <h5 class="my-4">Beispielhafte Agenda</h5>
+                <b-list-group>
+                  <b-list-group-item class="d-flex justify-content-between align-items-center">
+                    Cras justo odio
+                    <b-badge variant="primary" pill>14</b-badge>
+                  </b-list-group-item>
+
+                  <b-list-group-item class="d-flex justify-content-between align-items-center">
+                    Dapibus ac facilisis in
+                    <b-badge variant="primary" pill>2</b-badge>
+                  </b-list-group-item>
+
+                  <b-list-group-item class="d-flex justify-content-between align-items-center">
+                    Morbi leo risus
+                    <b-badge variant="primary" pill>1</b-badge>
+                  </b-list-group-item>
+                </b-list-group>
               </b-col>
               <b-col cols="6">
-                <h3>START.CODE Partnerschaft</h3>
+              <h5 class="my-4">Technologien</h5>
+                <p>Es ist wichtig während des Kurses eine Leittechnologie vorzugeben. Anahand dieser können direkte Hard-Skills erworben werden, welche dann gemeinsam mit dem Kennen lernen der Prozesse und Konzepte direkt einen Mehrwert geben.</p>
+                <b-row class="text-center my-4">
+                  <b-col cols="4">
+                    <i class="fab fa-python fa-3x"></i>  
+                    <h6 class="my-2">Python</h6>
+                  </b-col>
+                  <b-col cols="4">
+                    <i class="fas fa-table fa-3x"></i>  
+                    <h6 class="my-2">SQL</h6>
+                  </b-col>
+                  <b-col cols="4">
+                    <i class="fab fa-js-square fa-3x"></i>    
+                    <h6 class="my-2">JavaScript</h6>
+                  </b-col>
+                </b-row>
               </b-col>
             </b-row>
           </b-container>
-        </div>
       </section>
     </section>
   </Layout>
@@ -107,6 +134,10 @@ export default {
 
 <style lang="scss" scoped>
 p {
+  color: var(--gray);
+  margin: 0;
+}
+small {
   color: var(--gray);
   margin: 0;
 }
