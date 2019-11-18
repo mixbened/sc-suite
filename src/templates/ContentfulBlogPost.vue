@@ -1,7 +1,14 @@
 <template>
   <Layout>
-    <h2>{{ $page.post.title }}</h2>
-    <p v-html="richtextToHTML($page.post.blogContent)"></p>
+    <section class="my-5">
+      <b-container>
+        <div class="my-5">
+          <h2>{{ $page.post.title }}</h2>
+          <p>Von <b>{{ $page.post.author }}</b> - {{ formatDate($page.post.date) }}</p>
+        </div>
+        <p v-html="richtextToHTML($page.post.blogContent)"></p>
+      </b-container>
+    </section>
   </Layout>
 </template>
 
@@ -9,6 +16,8 @@
 query ($id: ID!) {
   post: contentfulBlogPost (id: $id) {
     title
+    author
+    date
     blogContent
   }
 }
@@ -36,7 +45,12 @@ export default {
             return `<img class="img-fluid" src="${node.data.target.fields.file.url}" alt="${node.data.target.fields.title}"/>`
           }
       }})
-    }
+    },
+    formatDate(date){
+      let ndate = new Date(date)
+      const months = ["Januar", "Februar", "März","April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+      return ndate.getDate() + ". " + months[ndate.getMonth()] + " " + ndate.getFullYear()   
+        }
   }
 }
 </script>
@@ -44,6 +58,10 @@ export default {
 <style lang="scss" scoped>
 .meta {
   display: flex;
+}
+p {
+  // letter-spacing: 0.2px;
+  line-height: 180%;
 }
 
 .box {

@@ -1,22 +1,54 @@
 <template>
   <Layout>
     <Title title="Kurse" subtitle="subtitle"/>
-      <li v-for="edge in $page.courses.edges" :key="edge.id">
-        Article: {{ edge.node.title }}
-        <g-link :to="edge.node.path">Zum Kurs</g-link>
-      </li>
+      <section class="section">
+      <b-container>
+        <b-row>
+          <b-col v-for="edge in $page.courses.edges" :key="edge.id" class="my-4 px-4" sm>
+            <CourseCard :title="edge.node.title" :start="edge.node.start" :dauer="edge.node.duration" :path="edge.node.path" :titleImage="edge.node.titleImage" :ort="edge.node.ort" :excerpt="edge.node.excerpt"/>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
+      <section class="section">
+      <b-container class="text-center my-5">
+        <h2>Erfolgsgeschichten</h2>
+        <p class="p-2 px-5">Wer START.CODE Kurse besucht hat und was sie dazu zu sagen haben, erfahrt ihr hier.</p>
+      </b-container>
+      <b-container>
+        
+        <b-row>
+          
+        </b-row>
+      </b-container>
+    </section>
+    <section class="section">
+      <b-container class="text-center my-5">
+        <h2>Location</h2>
+        <p class="p-2 px-5">START.CODE Kurse werden im STARTPLATZ abgehalten. Der STARTPLATZ ist der größte Startup Inkubator in NRW und vermittelt zwischen etablierten Unternehmen und erfolgreichen Startups. Der ideale Standort für Innovation und Technik</p>
+      </b-container>
+    </section>
+    <Banner />
   </Layout>
 </template>
 
 <page-query>
 query Kurs {
-  courses :allContentfulKurs {
+  courses: allContentfulKurs {
       edges {
         node {
           id
           title
+          start
           path
-          eventbriteId
+          excerpt
+          duration
+          ort
+          titleImage {
+            file {
+              url
+            }
+          }
         }
       }
   }
@@ -25,13 +57,16 @@ query Kurs {
 
 <script>
 import Title from '../components/Title'
+import CourseCard from '../components/CourseCard'
+import Banner from '../components/Banner'
 
 export default {
     metaInfo: {
       title: 'Kurse'
     },
     components: {
-      Title
+      Title,
+      CourseCard
     }
   }
 </script>

@@ -3,11 +3,7 @@
     <Title title="News" subtitle="subtitle"/>
     <section class="section">
       <b-container>
-        <b-row>
-          <b-col v-for="edge in $page.posts.edges" cols="4" :key="edge.id" class="my-4 px-4">
-            <ArticleCard :title="edge.node.title" :date="edge.node.date" :path="edge.node.path" :titleImage="edge.node.titleImage" :author="edge.node.author"/>
-          </b-col>
-        </b-row>
+        <ArticleCard class="my-5" v-for="edge in $page.posts.edges" :key="edge.id" :title="edge.node.title" :date="edge.node.date" :path="edge.node.path" :titleImage="edge.node.titleImage" :author="edge.node.author" :excerpt="edge.node.excerpt"/>
       </b-container>
     </section>
     <Newsletter />
@@ -24,6 +20,7 @@ query Post {
           date
           path
           author
+          excerpt
           titleImage {
             file {
               url
