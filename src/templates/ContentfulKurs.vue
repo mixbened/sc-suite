@@ -1,8 +1,32 @@
 <template>
   <Layout>
-    <h2>{{ $page.course.title }}</h2>
-    <p v-html="richtextToHTML($page.course.description)"></p>
-    <div id="eventbrite-widget-container-79316994265"></div>
+    <section>
+      <div class="course-image d-flex align-items-center" :style="'background-image: url(' + $page.course.titleImage.file.url + ')'" :alt="'Course' + $page.course.title">
+        <div class="w-100">
+            <h2 class="imageBanner">{{ $page.course.title }}</h2>
+            <h3 class="imageBanner subline">{{ $page.course.ort }}</h3>
+        </div>
+      </div>
+      <b-container class="my-2">
+        <b-row class="text-center">
+          <b-col sm>
+            <small><b><i class="fas fa-calendar-week text-secondary"></i> Start:</b> {{ formatDate($page.course.start) }}</small>
+          </b-col>
+          <b-col sm>
+            <small><b><i class="fas fa-graduation-cap text-success"></i> Dauer:</b> {{ $page.course.duration }}</small>
+          </b-col>
+          <b-col sm>
+            <small><b><i class="fas fa-map-marker-alt text-danger"></i> Ort:</b> {{ $page.course.ort }}</small>
+          </b-col>
+          <b-col sm>
+            <small><b><i class="fas fa-chalkboard-teacher text-blue"></i> Instructor:</b> {{ $page.course.instructor }}</small>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
+
+      <p v-html="richtextToHTML($page.course.description)"></p>
+      <div id="eventbrite-widget-container-79316994265"></div>
   </Layout>
 </template>
 
@@ -12,6 +36,15 @@ query ($id: ID!) {
     title
     description
     eventbriteId
+    ort
+    start
+    instructor
+    duration
+    titleImage {
+      file {
+        url
+      }
+    }
   }
 }
 </page-query>
@@ -38,6 +71,11 @@ export default {
             return `<img class="img-fluid" src="${node.data.target.fields.file.url}" alt="${node.data.target.fields.title}"/>`
           }
       }})
+    },
+    formatDate(date){
+      let ndate = new Date(date)
+      const months = ["Januar", "Februar", "März","April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+      return ndate.getDate() + ". " + months[ndate.getMonth()] + " " + ndate.getFullYear()   
     },
     loadCheckout(id){
     var exampleCallback = function() {
@@ -76,6 +114,34 @@ export default {
   .label {
     font-weight: bold;
   }
+}
+
+.course-image {
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  position: relative;
+  // padding: 0 20%;
+}
+
+.imageBanner {
+  background-color: var(--secondary);
+  color: var(--light);
+  padding: 1%;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 auto;
+  width: max-content;
+  // display: inline-block;
+}
+
+.subline {
+  background-color: var(--warning);
+  color: var(--primary);
+  font-size: 1.1em;
 }
 
 .blogImage {

@@ -3,7 +3,7 @@
     <b-navbar class="p-0" toggleable="md" type="light">
       <b-navbar-brand>
         <g-link class="logo-home logo-desktop" to="/">
-          <img alt="start.code logo" class="logo" src="../assets/images/logo_sc.png">
+          <img alt="start.code logo" class="logo" src="../assets/images/logo_19.png">
         </g-link>
       </b-navbar-brand>
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
