@@ -6,7 +6,7 @@
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e8429b1b1cc6f7df4af8fbf90_2e53d86122" tabindex="-1" value=""></div>
         <p class="mini-info">
           <input type="checkbox" required>
-          Ich stimme zu, Informationen und kommerzielle Angebote über START.CODE zu erhalten (z.B. Newsletter, die Veröffentlichung von Kurs- oder Blog-Posts, das Auslaufen von Tickets, ...) in Übereinstimmung mit der <g-link to="/data-privacy"> Datenschutzerklärung</g-link>
+          Ich stimme zu, Informationen und kommerzielle Angebote über START.CODE zu erhalten (z.B. Newsletter, die Veröffentlichung von Kurs- oder Blog-Posts, das Auslaufen von Tickets, ...) in Übereinstimmung mit der <g-link to="/data-privacy" class="text-warning"> Datenschutzerklärung</g-link>
         </p>
         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-warning">
       </form>
@@ -23,12 +23,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .display-3 {
-    font-size: 3.5em;
+    font-size: 2.5em;
+}
+
+p.lead {
+  font-size: 1.1em;
 }
 
 @media (max-width: 768px) {
     .display-3 {
-        font-size: 2em;
+        font-size: 1em;
+    }
+    .jumbotron {
+      padding: 2rem;
     }
 }
 </style>
