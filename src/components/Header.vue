@@ -52,14 +52,6 @@ nav {
   }
 }
 
-.logo-desktop {
-  @media(max-width: 419px) {
-    display: none;
-  }
-  @media (min-width: 420px) {
-    display: default;
-  }
-}
 
 .logo–mobile {
   @media(max-width: 419px) {

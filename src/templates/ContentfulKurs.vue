@@ -141,7 +141,7 @@ export default {
   color: var(--light);
   padding: 1%;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
   margin: 0 auto;
   width: max-content;
@@ -151,7 +151,7 @@ export default {
 .subline {
   background-color: var(--warning);
   color: var(--primary);
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 .blogImage {

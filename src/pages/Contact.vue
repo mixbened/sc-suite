@@ -63,7 +63,7 @@
                 ></b-form-textarea>
               
               </b-form-group>
-              <b-button @click="check = !check" type="submit" variant="primary">Submit</b-button>
+              <b-button @click="check = !check" type="submit" variant="primary">Senden</b-button>
           </form>
           </div>
         </div>
