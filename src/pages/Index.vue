@@ -79,6 +79,7 @@
       <b-carousel
         id="carousel-no-animation"
         controls
+        no-indicators
         img-width="1024"
         img-height="480"
       >

@@ -4,10 +4,12 @@
         <b-input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Addresse" style="width: 80%" required></b-input>
           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e8429b1b1cc6f7df4af8fbf90_2e53d86122" tabindex="-1" value=""></div>
-        <small>
+        <div class="my-3">
+          <small>
           <input type="checkbox" required>
           Ich stimme zu, Informationen und kommerzielle Angebote über START.CODE zu erhalten (z.B. Newsletter, die Veröffentlichung von Kurs- oder Blog-Posts, das Auslaufen von Tickets, ...) in Übereinstimmung mit der <g-link to="/data-privacy" class="text-warning"> Datenschutzerklärung</g-link>
-        </small>
+          </small>
+        </div>
         <div class="py-3">
           <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-warning">
         </div>
@@ -43,5 +45,6 @@ p.lead {
     .jumbotron {
       padding: 2rem;
     }
+
 }
 </style>
