@@ -9,7 +9,7 @@
             class="mb-2"
         >
             <b-card-text>
-                <div class="my-2"><small>{{ excerpt }}</small>   </div>
+                <div class="my-2"><small>{{ excerpt.substring(0,100) }}...</small></div>
                 <div><small><b><i class="fas fa-calendar-week text-secondary"></i> Start:</b> {{ formatDate(start) }}</small></div>
                 <div><small><b><i class="fas fa-graduation-cap text-success"></i> Dauer:</b> {{ dauer }}</small></div>
                 <div><small><b><i class="fas fa-map-marker-alt text-danger"></i> Ort:</b> {{ ort }}</small></div>
@@ -38,5 +38,10 @@ export default {
 <style lang="scss" scoped>
 .card-title {
     font-size: 1.2em;
+}
+h4.card-title {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
 }
 </style>
