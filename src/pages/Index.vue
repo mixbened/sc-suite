@@ -3,7 +3,7 @@
     <section class="section">
       <b-container class="text-center my-5 text-primary">
         <h1 class="headline">JUST CODE IT</h1>
-        <p class="p-2 px-5" style="font-size: 1.3em;">Einfach mal selber prorgrammieren - Kurse für Business und Beginner. Wir geben Kurse um digitale Kompetenzen zu vermitteln im Bereich Web und Data. Damit bilden wir nicht nur Softwareentwickler aus, sondern bringen den essentiellen Teil der Digitalisierung an jeden.</p>
+        <p class="p-2 px-5" style="font-size: 1.3em;">Einfach mal selbst Programmieren - Kurse für Business und Beginner! Wir vermitteln digitale Kompetenzen im Bereich Web und Data - und das praktisch! Damit bilden wir nicht nur Softwareentwickler aus, sondern vermitteln digitale Fähigkeiten an Jeden, der seine Zukunft selbst gestalten will.</p>
       </b-container>
       <b-container class="position-relative section">
         <!-- <img src="../assets/images/course4.jpeg" class="img-fluid rounded" id="stock" /> -->
@@ -17,7 +17,7 @@
                 <b-card-text>
                   Spannenden Kurse zu den Themen Web und Data an unseren Standorten in Köln und Düsseldorf
                 </b-card-text>
-              <g-link to="/kurse"><b-button href="#" variant="warning">Zu den Kursen</b-button></g-link>
+              <g-link to="/kurse"><b-button variant="warning">Zu den Kursen</b-button></g-link>
               </b-card-body>
             </b-col>
           </b-row>
@@ -32,7 +32,7 @@
                 <b-card-text>
                   Neuigkeiten und interessante Stories zu den Themen programmieren lernen und digitale Weiterbildung
                 </b-card-text>
-              <g-link to="/news"><b-button href="#" variant="warning">Mehr Wissen</b-button></g-link>
+              <g-link to="/blog"><b-button variant="warning">Mehr Wissen</b-button></g-link>
               </b-card-body>
             </b-col>
           </b-row>
