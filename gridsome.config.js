@@ -5,7 +5,7 @@ module.exports = {
     ContentfulBlogPost: '/blog/:slug',
     ContentfulKurs: '/kurs/:title'
   },
-  siteUrl: 'www.start-code.de',
+  siteUrl: 'https://www.start-code.de',
   plugins: [
     {
       use: '@gridsome/source-contentful',
@@ -20,7 +20,7 @@ module.exports = {
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-72659574-10'
+        id: 'UA-141593661-1'
       }
     },
     {
