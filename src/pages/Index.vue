@@ -17,7 +17,7 @@
                 <b-card-text>
                   Spannenden Kurse zu den Themen Web und Data an unseren Standorten in Köln und Düsseldorf
                 </b-card-text>
-              <b-button href="#" variant="warning">Zu den Kursen</b-button>
+              <g-link to="/kurse"><b-button href="#" variant="warning">Zu den Kursen</b-button></g-link>
               </b-card-body>
             </b-col>
           </b-row>
@@ -32,7 +32,7 @@
                 <b-card-text>
                   Neuigkeiten und interessante Stories zu den Themen programmieren lernen und digitale Weiterbildung
                 </b-card-text>
-              <b-button href="#" variant="warning">Mehr Wissen</b-button>
+              <g-link to="/news"><b-button href="#" variant="warning">Mehr Wissen</b-button></g-link>
               </b-card-body>
             </b-col>
           </b-row>

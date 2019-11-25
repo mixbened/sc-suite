@@ -6,7 +6,6 @@
             img-alt="Article Image"
             img-top
             tag="article"
-            style="max-width: 50%"
             class="mb-2"
         >
             <b-card-text>
