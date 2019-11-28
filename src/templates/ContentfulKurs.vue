@@ -25,7 +25,7 @@
       </b-container>
     </section>
       <p v-html="richtextToHTML($page.course.description)"></p>
-      <div id="eventbrite-widget-container-79316994265"></div>
+      <div id="eventbrite-widget-container-79316994265" :value="$page.course.eventbriteId"></div>
       <div class="w-100 p-2 mt-5 text-center">
         <h3>Termin passt nicht?</h3>
         <a class="typeform-share button my-4" href="https://benediktmix651456.typeform.com/to/S4OD7M" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#4FA9B3;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="__blank">Warteliste </a>
@@ -66,6 +66,11 @@ export default {
       id: this.$page.course.eventbriteId
     }
   },
+  data(){
+    return {
+      id: this.course
+    }
+  },
   methods: {
     richtextToHTML (content) {
       return documentToHtmlString(content, {renderNode: {
@@ -80,32 +85,35 @@ export default {
       return ndate.getDate() + ". " + months[ndate.getMonth()] + " " + ndate.getFullYear()   
     },
     loadCheckout(id){
+      console.log('Get Eventbrite')
     var exampleCallback = function() {
         console.log('Order complete!');
-        $router.push('/kurse')
+        this.$router.push('/kurse')
     };
 
     window.EBWidgets.createWidget({
             // Required
             widgetType: 'checkout',
-            eventId: '79316994265',
+            eventId: id,
             iframeContainerId: 'eventbrite-widget-container-79316994265',
 
             // Optional
             iframeContainerHeight: 200,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
             onOrderComplete: exampleCallback  // Method called when an order has successfully completed
         })
-    }
-  },
+    },
   loadlist(){
     var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/";
     if(!gi.call(d,id)){ 
       js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; 
       q.parentNode.insertBefore(js,q)
     } 
+  }
   },
   mounted() {
-    this.loadCheckout()
+    // console.log('Get ID')
+    let id = document.getElementById('eventbrite-widget-container-79316994265').getAttribute('value')
+    this.loadCheckout(id)
     this.loadlist()
   },
 }

@@ -8,7 +8,7 @@
       </b-navbar-brand>
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
       <b-collapse is-nav id="nav_collapse">
-        <b-navbar-nav class="ml-auto">
+        <b-navbar-nav class="ml-auto d-flex align-items-center">
           <g-link class="nav--link" to="/">Start</g-link>
           <g-link class="nav--link" to="/kurse">Kurse</g-link>
           <g-link class="nav--link" to="/fuer-unternehmen">Für Unternehmen</g-link>
@@ -16,6 +16,7 @@
           <g-link class="nav--link" to="/partner">Partner</g-link>
           <g-link class="nav--link" to="/faqs">FAQ</g-link>
           <g-link class="nav--link" to="/contact">Kontakt</g-link>
+          <g-link class="nav--link" to="/class"><b-button variant="primary">Students</b-button></g-link>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

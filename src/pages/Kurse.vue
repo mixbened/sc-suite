@@ -4,7 +4,7 @@
       <section class="section">
       <b-container>
         <b-row>
-          <b-col v-for="edge in $page.courses.edges" :key="edge.id" sm="4">
+          <b-col v-for="edge in $page.courses.edges" :key="edge.id" sm="4" style="margin-bottom: 50px;">
             <CourseCard :title="edge.node.title" :start="edge.node.start" :dauer="edge.node.duration" :path="edge.node.path" :titleImage="edge.node.titleImage" :ort="edge.node.ort" :excerpt="edge.node.excerpt"/>
           </b-col>
         </b-row>
