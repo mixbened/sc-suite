@@ -111,8 +111,9 @@ export default {
     }
   },
   mounted() {
-    // console.log('Get ID')
+    console.log('Get ID')
     let id = document.getElementById('eventbrite-widget-container-79316994265').getAttribute('value')
+    console.log('Get ID', id)
     this.loadCheckout(id)
     this.loadlist()
   },
