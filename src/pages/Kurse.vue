@@ -58,7 +58,6 @@
         ></b-carousel-slide>
       </b-carousel>
     </section>
-    <Banner />
   </Layout>
 </template>
 
