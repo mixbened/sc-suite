@@ -6,7 +6,7 @@
           <h2>{{ $page.post.title }}</h2>
           <p>Von <b>{{ $page.post.author }}</b> - {{ formatDate($page.post.date) }}</p>
         </div>
-        <!-- <p v-html="richtextToHTML($page.post.blogContent)"></p> -->
+        <p v-html="richtextToHTML($page.post.blogContent)"></p>
       </b-container>
     </section>
   </Layout>
