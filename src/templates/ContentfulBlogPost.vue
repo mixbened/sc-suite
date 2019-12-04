@@ -6,7 +6,8 @@
           <h2>{{ $page.post.title }}</h2>
           <p>Von <b>{{ $page.post.author }}</b> - {{ formatDate($page.post.date) }}</p>
         </div>
-        <p v-html="richtextToHTML($page.post.blogContent)"></p>
+        <Content :data="$page.post.blogContent"/>
+        <!-- <p v-html="richtextToHTML($page.post.blogContent)"></p> -->
       </b-container>
     </section>
   </Layout>
@@ -25,6 +26,7 @@ query ($id: ID!) {
 
 <script>
 import BlogContent from '@/components/BlogContent'
+import Content from '../components/Content'
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
 import { BLOCKS } from '@contentful/rich-text-types'
 
@@ -32,6 +34,7 @@ import { BLOCKS } from '@contentful/rich-text-types'
 export default {
   components: {
     BlogContent,
+    Content
   },
   metaInfo() {
     return {

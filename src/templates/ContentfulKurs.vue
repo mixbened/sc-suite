@@ -112,9 +112,9 @@ export default {
   },
   mounted() {
     // console.log('Get ID')
-    console.log('Mounting...')
+    // console.log('Mounting...')
     let id = document.getElementById('eventbrite-widget-container-79316994265').getAttribute('value')
-    console.log('Load Checkout', id)
+    // console.log('Load Checkout', id)
     this.loadCheckout(id)
     this.loadlist()
   },
