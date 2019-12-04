@@ -14,11 +14,6 @@ export default {
   components: {
     BlogContent,
   },
-  metaInfo() {
-    return {
-      title: this.$page.post.title,
-    }
-  },
   methods: {
     richtextToHTML (content) {
       return documentToHtmlString(content, {renderNode: {

@@ -59,14 +59,14 @@ import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
 import { BLOCKS } from '@contentful/rich-text-types'
 
 export default {
-  components: {
-    Content
-  },
   metaInfo() {
     return {
       title: this.$page.course.title,
       id: this.$page.course.eventbriteId
     }
+  },
+  components: {
+    Content
   },
   data(){
     return {
@@ -119,6 +119,7 @@ export default {
     // console.log('Load Checkout', id)
     this.loadCheckout(id)
     this.loadlist()
+    // console.log(this.$page.course.title)
   },
 }
 </script>

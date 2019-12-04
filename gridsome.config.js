@@ -49,8 +49,8 @@ module.exports = {
       }
     }
   },
-  chainWebpack (config) {
-    config.mode('development')
-  }
+  // chainWebpack (config) {
+  //   config.mode('development')
+  // }
 
 }

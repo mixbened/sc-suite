@@ -52,12 +52,12 @@ export default [
     component: () => import(/* webpackChunkName: "page--src--pages--data-privacy-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/DataPrivacy.vue")
   },
   {
-    path: "/contact/",
-    component: () => import(/* webpackChunkName: "page--src--pages--contact-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Contact.vue")
-  },
-  {
     path: "/class/",
     component: () => import(/* webpackChunkName: "page--src--pages--class-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Class.vue")
+  },
+  {
+    path: "/contact/",
+    component: () => import(/* webpackChunkName: "page--src--pages--contact-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Contact.vue")
   },
   {
     path: "/blog/",
