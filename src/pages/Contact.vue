@@ -14,10 +14,10 @@
           </div>
           <div class="col-sm">
             <div class="bar">Deine Nachricht</div>
-            <lottie-player v-if="check"
+            <!-- <lottie-player v-if="check"
                 src="https://assets5.lottiefiles.com/packages/lf20_8SdEu9.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay >
-            </lottie-player>
-            <form v-if="!check" class="card contact-form" ref="form" @submit.stop.prevent="handleSubmit">
+            </lottie-player> -->
+            <form class="card contact-form" ref="form" @submit.stop.prevent="handleSubmit">
           
               <b-form-group
                 label="Name"

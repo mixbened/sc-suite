@@ -3,7 +3,7 @@
         <div class="container">
             <h2 class="title is-2">{{ title }}</h2>
             <p class="content">{{ text }}</p>
-            <g-link v-if="cta || action" :to="cta"><b-button variant="light">{{ action }}</b-button></g-link>
+            <g-link v-show="cta || action" :to="cta"><b-button variant="light">{{ action }}</b-button></g-link>
         </div>
     </section>
 </template>

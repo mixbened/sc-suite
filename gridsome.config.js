@@ -40,5 +40,7 @@ module.exports = {
   devServer: {
     host: '0.0.0.0',
     port: 8080
-  }
+  },
+  mode: 'spa',
+  build: { html: { minify: { collapseWhitespace: true } 
 }
