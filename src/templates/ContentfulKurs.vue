@@ -24,7 +24,7 @@
         </b-row>
       </b-container>
     </section>
-      <p v-html="richtextToHTML($page.course.description)"></p>
+      <Content class="my-4" :data="$page.course.description"/>
       <div id="eventbrite-widget-container-79316994265" :value="$page.course.eventbriteId"></div>
       <div class="w-100 p-2 mt-5 text-center">
         <h3>Termin passt nicht?</h3>
@@ -54,11 +54,13 @@ query ($id: ID!) {
 
 <script>
 import BlogContent from '@/components/BlogContent'
+import Content from '../components/Content'
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
 import { BLOCKS } from '@contentful/rich-text-types'
 
 export default {
   components: {
+    Content
   },
   metaInfo() {
     return {

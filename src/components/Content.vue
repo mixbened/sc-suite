@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p v-html="richtextToHTML(data)"></p>
+        <div v-html="richtextToHTML(data)"></div>
     </div>
 </template>
 
