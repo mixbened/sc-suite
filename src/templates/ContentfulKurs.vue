@@ -85,7 +85,7 @@ export default {
       return ndate.getDate() + ". " + months[ndate.getMonth()] + " " + ndate.getFullYear()   
     },
     loadCheckout(id){
-      console.log('Get Eventbrite')
+      // console.log('Get Eventbrite')
     var exampleCallback = function() {
         console.log('Order complete!');
         this.$router.push('/kurse')
@@ -111,9 +111,9 @@ export default {
     }
   },
   mounted() {
-    console.log('Get ID')
+    // console.log('Get ID')
     let id = document.getElementById('eventbrite-widget-container-79316994265').getAttribute('value')
-    console.log('Get ID', id)
+    // console.log('Get ID', id)
     this.loadCheckout(id)
     this.loadlist()
   },
