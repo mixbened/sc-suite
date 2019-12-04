@@ -42,8 +42,15 @@ module.exports = {
     port: 8080
   },
   mode: 'spa',
-  build: { html: { minify: { collapseWhitespace: true },
+  build: { 
+    html: { 
+      minify: { 
+        collapseWhitespace: true 
+      }
+    }
+  },
   chainWebpack (config) {
     config.mode('development')
   }
+
 }
