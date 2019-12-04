@@ -6,7 +6,7 @@
           <h2>{{ $page.post.title }}</h2>
           <p>Von <b>{{ $page.post.author }}</b> - {{ formatDate($page.post.date) }}</p>
         </div>
-        <p v-html="richtextToHTML($page.post.blogContent)"></p>
+        <!-- <p v-html="richtextToHTML($page.post.blogContent)"></p> -->
       </b-container>
     </section>
   </Layout>
@@ -42,7 +42,7 @@ export default {
     richtextToHTML (content) {
       return documentToHtmlString(content, {renderNode: {
           [BLOCKS.EMBEDDED_ASSET]: (node) => {
-            return `<img class="img-fluid" src="${node.data.target.fields.file.url}" alt="${node.data.target.fields.title}"/>`
+            return `<img class="img-fluid" src="${node.data.target.fields.file.url}" alt="${node.data.target.fields.title}">`
           }
       }})
     },
