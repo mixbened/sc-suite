@@ -85,22 +85,22 @@ export default {
       return ndate.getDate() + ". " + months[ndate.getMonth()] + " " + ndate.getFullYear()   
     },
     loadCheckout(id){
-      // console.log('Get Eventbrite')
-    var exampleCallback = function() {
-        console.log('Order complete!');
-        this.$router.push('/kurse')
-    };
+      // console.log('Load Checkout')
+      var exampleCallback = function() {
+          console.log('Order complete!');
+          this.$router.push('/kurse')
+      };
 
-    window.EBWidgets.createWidget({
-            // Required
-            widgetType: 'checkout',
-            eventId: id,
-            iframeContainerId: 'eventbrite-widget-container-79316994265',
+      window.EBWidgets.createWidget({
+              // Required
+              widgetType: 'checkout',
+              eventId: id,
+              iframeContainerId: 'eventbrite-widget-container-79316994265',
 
-            // Optional
-            iframeContainerHeight: 200,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-        })
+              // Optional
+              iframeContainerHeight: 200,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+              onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+          })
     },
     loadlist(){
       var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/";
@@ -113,7 +113,7 @@ export default {
   mounted() {
     // console.log('Get ID')
     let id = document.getElementById('eventbrite-widget-container-79316994265').getAttribute('value')
-    // console.log('Get ID', id)
+    console.log('Load Checkout', id)
     this.loadCheckout(id)
     this.loadlist()
   },
