@@ -8,7 +8,7 @@
                 <img class="img-fluid profile" src="../assets/images/christine-schluetz.jpg" fluid alt="christine schlütz">
                 <h5 class="title is-5">Christine Schlütz</h5>
                 <div>Program Manager START.CODE</div>
-                <div>Email: christine@start-code.de</div>
+                <div>Email: christine.schluetz@startplatz.de</div>
                 <div>Tel: +49 (0)1578 0535 600</div>
                 <p></p>
           </div>

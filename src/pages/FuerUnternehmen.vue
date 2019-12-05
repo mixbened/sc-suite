@@ -113,7 +113,7 @@
                         <img class="img-fluid profile my-3" src="../assets/images/benedikt-mix.jpg" fluid alt="benedikt mix">
                         <h5>Benedikt Mix</h5>
                         <div>Head Instructor START.CODE</div>
-                        <div>Email: ben@start-code.de</div>
+                        <div>Email: benedikt.mix@startplatz.de</div>
                         <div>Tel: +49 (0)163 7398 552</div>
                     </div>
                     <g-link to="/contact" class="my-2"><b-button variant="warning">Kontakt</b-button></g-link>
