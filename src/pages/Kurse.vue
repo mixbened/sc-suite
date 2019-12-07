@@ -63,7 +63,7 @@
 
 <page-query>
 query Kurs {
-  courses: allContentfulKurs {
+  courses: allContentfulKurs(sortBy: "date") {
       edges {
         node {
           id

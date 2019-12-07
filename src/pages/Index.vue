@@ -138,7 +138,7 @@ import Newsletter from '../components/Newsletter'
 
 export default {
   metaInfo: {
-    title: 'Programmieren ist für jeden'
+    title: 'JUST CODE IT - Programmieren für Jeden'
   },
   components: {
     Newsletter

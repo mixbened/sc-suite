@@ -16,16 +16,8 @@ export default [
     component: () => import(/* webpackChunkName: "page--src--pages--team-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Team.vue")
   },
   {
-    path: "/start-1/",
-    component: () => import(/* webpackChunkName: "page--src--pages--start-1-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Start-1.vue")
-  },
-  {
     path: "/success/",
     component: () => import(/* webpackChunkName: "page--src--pages--success-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/success.vue")
-  },
-  {
-    path: "/start/",
-    component: () => import(/* webpackChunkName: "page--src--pages--start-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Start.vue")
   },
   {
     path: "/partner/",
@@ -52,12 +44,12 @@ export default [
     component: () => import(/* webpackChunkName: "page--src--pages--data-privacy-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/DataPrivacy.vue")
   },
   {
-    path: "/contact/",
-    component: () => import(/* webpackChunkName: "page--src--pages--contact-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Contact.vue")
-  },
-  {
     path: "/class/",
     component: () => import(/* webpackChunkName: "page--src--pages--class-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Class.vue")
+  },
+  {
+    path: "/contact/",
+    component: () => import(/* webpackChunkName: "page--src--pages--contact-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Contact.vue")
   },
   {
     path: "/blog/",
