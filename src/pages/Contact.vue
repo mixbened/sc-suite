@@ -14,10 +14,10 @@
           </div>
           <div class="col-sm">
             <div class="bar">Deine Nachricht</div>
-            <!-- <lottie-player v-if="check"
+            <lottie-player v-if="check"
                 src="https://assets5.lottiefiles.com/packages/lf20_8SdEu9.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay >
-            </lottie-player> -->
-            <form class="card contact-form" ref="form" @submit.stop.prevent="handleSubmit">
+            </lottie-player>
+            <form v-if="!check" class="card contact-form" ref="form" action="https://formspree.io/xvogdrpw" method="POST">
           
               <b-form-group
                 label="Name"
@@ -29,6 +29,7 @@
                 <b-form-input
                   id="name-input"
                   v-model="name"
+                  name="name"
                   placeholder="Name"
                   required
                 ></b-form-input>
@@ -43,6 +44,7 @@
 
                 <b-form-input
                   id="email-input"
+                  name="_replyto"
                   v-model="email"
                   placeholder="Email"
                   required
@@ -59,11 +61,12 @@
                   id="nachricht-input"
                   v-model="nachricht"
                   placeholder="Deine Nachricht ..."
+                  name="message"
                   required
                 ></b-form-textarea>
               
               </b-form-group>
-              <b-button @click="check = !check" type="submit" variant="primary">Senden</b-button>
+              <b-button @click="check != check" type="submit" variant="primary">Senden</b-button>
           </form>
           </div>
         </div>
@@ -78,6 +81,7 @@
 <script>
 import Title from '../components/Title'
 import Banner from '../components/Banner'
+import axios from 'axios'
 
   export default {
     metaInfo: {
@@ -98,8 +102,12 @@ import Banner from '../components/Banner'
     },
     methods: {
       sendMessage(bvModalEvt){
-        // send content somewhere 
-          this.$refs.modal.hide()
+        // send content somewhere
+          // console.log('Send Mail')
+          // axios.post('https://hooks.zapier.com/hooks/catch/4921789/o6g2dlu/',{name: this.name, mail: this.email, message: this.nachricht})
+          // .then(res => {
+          //     console.log('mail sent: ', res)
+          // })
       }
     }
   }
