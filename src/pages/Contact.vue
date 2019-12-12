@@ -101,14 +101,6 @@ import axios from 'axios'
       Banner
     },
     methods: {
-      sendMessage(bvModalEvt){
-        // send content somewhere
-          // console.log('Send Mail')
-          // axios.post('https://hooks.zapier.com/hooks/catch/4921789/o6g2dlu/',{name: this.name, mail: this.email, message: this.nachricht})
-          // .then(res => {
-          //     console.log('mail sent: ', res)
-          // })
-      }
     }
   }
 </script>

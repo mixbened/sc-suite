@@ -3,10 +3,11 @@
     <section class="my-5">
       <h1>{{ $page.dashboard.kurs.title }}</h1>
       <p>Instructor: {{ $page.dashboard.kurs.instructor }}</p>
+      <p>Slack Workspace: {{ $page.dashboard.slack }}</p>
       <p>Ort: {{ $page.dashboard.kurs.ort }}</p>
-      <p>Eventbrite: <b-button :href="'https://www.eventbrite.de/e/' + $page.dashboard.kurs.eventbriteId" target="_blank">Zu Eventbrite</b-button></p>
-      <p>Zugang Dateien: <b-button :href="$page.dashboard.drive" target="_blank">Zu Google Drive</b-button></p>
       <p v-html="richtextToHTML($page.dashboard.infos)"></p>
+      <b-button :href="$page.dashboard.drive" target="_blank" block>Curriculum & Inhalte</b-button>
+      <b-button href="https://slack.com/signin" target="_blank" variant="primary" block>Slack Channel</b-button>
     </section>
   </Layout>
 </template>

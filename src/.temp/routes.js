@@ -4,7 +4,7 @@ export default [
     component: () => import(/* webpackChunkName: "page--src--templates--contentful-kurs-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/templates/ContentfulKurs.vue")
   },
   {
-    path: "/class/:title/",
+    path: "/class/:eventId/",
     component: () => import(/* webpackChunkName: "page--src--templates--contentful-dashboard-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/templates/ContentfulDashboard.vue")
   },
   {
@@ -44,12 +44,12 @@ export default [
     component: () => import(/* webpackChunkName: "page--src--pages--data-privacy-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/DataPrivacy.vue")
   },
   {
-    path: "/class/",
-    component: () => import(/* webpackChunkName: "page--src--pages--class-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Class.vue")
-  },
-  {
     path: "/contact/",
     component: () => import(/* webpackChunkName: "page--src--pages--contact-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Contact.vue")
+  },
+  {
+    path: "/class/",
+    component: () => import(/* webpackChunkName: "page--src--pages--class-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Class.vue")
   },
   {
     path: "/blog/",

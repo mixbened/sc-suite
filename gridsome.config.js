@@ -4,7 +4,7 @@ module.exports = {
   templates: {
     ContentfulBlogPost: '/blog/:slug',
     ContentfulKurs: '/kurs/:title',
-    ContentfulDashboard: '/class/:title'
+    ContentfulDashboard: '/class/:eventId'
   },
   siteUrl: 'https://www.start-code.de',
   plugins: [
