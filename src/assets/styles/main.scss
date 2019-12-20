@@ -25,6 +25,10 @@ p > a {
     color: var(--secondary)
 }
 
+.modal-dialog {
+    max-width: 800px !important;
+  }
+
 @media (max-width: 768px){
     p {
         font-size: 0.8em !important;

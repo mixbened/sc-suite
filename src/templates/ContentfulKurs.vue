@@ -28,7 +28,73 @@
       <div id="eventbrite-widget-container-79316994265" :value="$page.course.eventbriteId"></div>
       <div class="w-100 p-2 mt-5 text-center">
         <h3>Termin passt nicht?</h3>
-        <a class="typeform-share button my-4" href="https://benediktmix651456.typeform.com/to/S4OD7M" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#4FA9B3;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="__blank">Warteliste </a>
+        <div>
+          <b-button v-b-modal.modal-1>Warteliste</b-button>
+          <b-modal id="modal-1" title="Warteliste" ok-disabled="true">
+            <!-- Begin Mailchimp Signup Form -->
+            <div id="mc_embed_signup">
+            <form action="https://start-code.us20.list-manage.com/subscribe/post?u=e8429b1b1cc6f7df4af8fbf90&amp;id=2e53d86122" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+              <h5>Lass uns ein paar Information von dir da, damit wir dich informieren können, wenn es neue Kurse und Angebote bei START.CODE gibt!</h5>
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+            </div>
+
+            <div class="mc-field-group">
+              <label for="mce-FNAME">First Name </label>
+              <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+            </div>
+
+            <div class="mc-field-group">
+              <label for="mce-LNAME">Last Name </label>
+              <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+            </div>
+
+            <div class="mc-field-group">
+              <label for="mce-LNAME">When do you want to attend? </label>
+              <input type="text" value="" name="MMERGE9" class="" id="mce-LNAME">
+            </div>
+
+            <div class="mc-field-group">
+              <label for="mce-MMERGE7">Waitlist <span class="asterisk">*</span></label>
+              <select name="MMERGE7" id="mce-MMERGE7" required>
+                <option value="Python">Python</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Web Development">Web Development</option>
+                <option value="App Development">App Development</option>
+              </select>
+            </div>
+
+            <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+                <div class="content__gdpr">
+                    <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+                <label class="checkbox subfield" for="gdpr_27217"><input type="checkbox" id="gdpr_27217" name="gdpr[27217]" value="Y" class="av-checkbox "><span>Ich bin einverstanden mit der Datenverarbeitung nach den <g-link to="/data-privacy">Datenschutzbestimmungen</g-link></span></label>
+                    </fieldset>
+                    <p>Sie können sich jederzeit abmelden, indem Sie auf den Link in der Fußzeile unserer E-Mails klicken. Informationen zu unseren Datenschutzpraktiken finden Sie auf unserer Website.</p>
+                </div>
+                <div class="content__gdprLegal">
+                    <p>We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/" target="_blank">Learn more about Mailchimp's privacy practices here.</a></p>
+                </div>
+            </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e8429b1b1cc6f7df4af8fbf90_2e53d86122" tabindex="-1" value=""></div>
+                <div class="clear"><input @click="$bvModal.hide('modal-1')	" type="submit" value="Einschreiben" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary"></div>
+                </div>
+            </form>
+            </div>
+            <template v-slot:modal-footer>
+              <div class="w-100">
+              </div>
+            </template>
+            <!--End mc_embed_signup-->
+          </b-modal>
+        </div>
       </div>
   </Layout>
 </template>
