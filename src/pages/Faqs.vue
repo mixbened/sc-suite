@@ -29,7 +29,7 @@ import Banner from '../components/Banner'
 
 export default {
   metaInfo: {
-    title: 'Partner'
+    title: 'FAQ'
   },
   components: {
     Title,

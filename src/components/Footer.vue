@@ -5,6 +5,7 @@
       <g-link to="/impressum">Impressum</g-link>
       <g-link to="/data-privacy">Datenschutzrichtlinien</g-link>
       <g-link to="/team">Über uns</g-link>
+      <g-link to="/jobs">Jobs</g-link>
     </div>
   </footer>
 </template>

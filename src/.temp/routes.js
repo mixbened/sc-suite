@@ -28,6 +28,10 @@ export default [
     component: () => import(/* webpackChunkName: "page--src--pages--kurse-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Kurse.vue")
   },
   {
+    path: "/jobs/",
+    component: () => import(/* webpackChunkName: "page--src--pages--jobs-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Jobs.vue")
+  },
+  {
     path: "/impressum/",
     component: () => import(/* webpackChunkName: "page--src--pages--impressum-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Impressum.vue")
   },
@@ -44,12 +48,12 @@ export default [
     component: () => import(/* webpackChunkName: "page--src--pages--data-privacy-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/DataPrivacy.vue")
   },
   {
-    path: "/class/",
-    component: () => import(/* webpackChunkName: "page--src--pages--class-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Class.vue")
-  },
-  {
     path: "/contact/",
     component: () => import(/* webpackChunkName: "page--src--pages--contact-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Contact.vue")
+  },
+  {
+    path: "/class/",
+    component: () => import(/* webpackChunkName: "page--src--pages--class-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/pages/Class.vue")
   },
   {
     path: "/blog/",

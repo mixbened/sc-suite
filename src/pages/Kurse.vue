@@ -14,7 +14,7 @@
       <b-container class="text-center my-5">
         <h2>Erfolgsgeschichten</h2>
         <p class="p-2 px-5">Wer START.CODE Kurse besucht hat und was sie dazu zu sagen haben, erfahrt ihr hier.</p>
-        <g-link to="/news"><b-button variant="primary" class="mx-auto">Interviews</b-button></g-link>
+        <g-link to="/blog"><b-button variant="primary" class="mx-auto">Interviews</b-button></g-link>
       </b-container>
       <b-container>
         

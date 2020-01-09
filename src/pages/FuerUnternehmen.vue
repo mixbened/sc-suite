@@ -128,7 +128,7 @@
                         <div>Sonstige Infos:</div>
                         <div>info@start-code.de</div>
                     </div>
-                    <g-link to="/contact" class="my-2"><b-button variant="warning">Download</b-button></g-link>
+                    <a target="_blank" href="/ciod.pdf" class="my-2"><b-button variant="warning">Download</b-button></a>
                   </div>
                 </b-col>
               </b-row>
