@@ -29,6 +29,11 @@ p > a {
     max-width: 800px !important;
   }
 
+p {
+    font-size: 1.15em;
+    line-height: 1.6;
+}
+
 @media (max-width: 768px){
     p {
         font-size: 0.8em !important;
