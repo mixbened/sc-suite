@@ -7,7 +7,26 @@
           <p>Von <b>{{ $page.post.author }}</b> - {{ formatDate($page.post.date) }}</p>
         </div>
         <Content :data="$page.post.blogContent"/>
-        <!-- <p v-html="richtextToHTML($page.post.blogContent)"></p> -->
+        <b-row>
+          <b-col>  
+            <b-card no-body class="overflow-hidden">
+              <b-row no-gutters>
+                <b-col md="6">
+                  <b-card-img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" class="rounded-0"></b-card-img>
+                </b-col>
+                <b-col md="6">
+                  <b-card-body title="Digitale Bildung für alle">
+                    <b-card-text>
+                      Wenn du dich für weitere Themen interessierst, schau auch unsere anderen Beiträge an. Unter Kursen findest du unsere aktuelle anstehenden Kurs in Düsseldorf und Köln.
+                    </b-card-text>
+                    <g-link to="/kurse"><b-button class="mx-2" variant="info">Kurse</b-button></g-link>
+                    <g-link to="/blog"><b-button class="mx-2" variant="dark">Artikel</b-button></g-link>
+                  </b-card-body>
+                </b-col>
+              </b-row>
+              </b-card>
+          </b-col>
+        </b-row>
       </b-container>
     </section>
   </Layout>
