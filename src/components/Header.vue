@@ -16,7 +16,7 @@
           <g-link class="nav--link" to="/partner">Partner</g-link>
           <g-link class="nav--link" to="/faqs">FAQ</g-link>
           <g-link class="nav--link" to="/contact">Kontakt</g-link>
-          <g-link class="nav--link" to="/class"><b-button variant="primary">Students</b-button></g-link>
+          <a href="https://lms.start-code.de" class="mx-2"><b-button variant="primary">Students</b-button></a>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

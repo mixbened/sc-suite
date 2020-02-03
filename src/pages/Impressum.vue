@@ -2,9 +2,9 @@
   <Layout>
     <Title title="Impressum" subtitle="subtitle"/>
     <b-container class="w-50 text-center mt-5"><b>
-      Firmenwortlaut: c/o Familie Gräf Holding GmbH
+      Firmenwortlaut: c/o STARTPLATZ Köln GmbH
       Firmensitz: Dietrich-Bonhoeffer Str. 5, D-50354 Hürth
-      Email: info@start-code.de
+      Email: start-code@startplatz.de
     </b></b-container>
   </Layout>
 </template>
