@@ -3,8 +3,7 @@ module.exports = {
   siteDescription: 'Bridging the Gap between IT and everyone else',
   templates: {
     ContentfulBlogPost: '/blog/:slug',
-    ContentfulKurs: '/kurs/:title',
-    ContentfulDashboard: '/class/:eventId'
+    ContentfulKurs: '/kurs/:title'
   },
   siteUrl: 'https://www.start-code.de',
   plugins: [

@@ -83,12 +83,6 @@
         img-height="480"
       >
           <b-carousel-slide
-            :img-src="require('../assets/images/testimonials/1.png')"
-          ></b-carousel-slide>
-          <b-carousel-slide
-            :img-src="require('../assets/images/testimonials/2.png')"
-          ></b-carousel-slide>
-          <b-carousel-slide
             :img-src="require('../assets/images/testimonials/3.png')"
           ></b-carousel-slide>
       </b-carousel>

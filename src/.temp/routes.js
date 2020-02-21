@@ -4,10 +4,6 @@ export default [
     component: () => import(/* webpackChunkName: "page--src--templates--contentful-kurs-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/templates/ContentfulKurs.vue")
   },
   {
-    path: "/class/:eventId/",
-    component: () => import(/* webpackChunkName: "page--src--templates--contentful-dashboard-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/templates/ContentfulDashboard.vue")
-  },
-  {
     path: "/blog/:slug/",
     component: () => import(/* webpackChunkName: "page--src--templates--contentful-blog-post-vue" */ "/Users/Ben/Documents/projects_local/sc-suite/src/templates/ContentfulBlogPost.vue")
   },
