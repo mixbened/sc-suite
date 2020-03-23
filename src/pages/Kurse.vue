@@ -3,6 +3,8 @@
     <Title title="Kurse" subtitle="subtitle"/>
       <section class="section">
       <b-container>
+        <small><i class="fa fa-info"></i><b>  Alle Kurse aktuell remote per Video-Konferenz</b></small>
+        <hr>
         <b-row>
           <b-col v-for="edge in $page.courses.edges" :key="edge.id" sm="4" style="margin-bottom: 50px;">
             <CourseCard :title="edge.node.title" :start="edge.node.start" :dauer="edge.node.duration" :path="edge.node.path" :titleImage="edge.node.titleImage" :ort="edge.node.ort" :excerpt="edge.node.excerpt"/>
@@ -101,4 +103,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+hr {
+  margin: .5em 0 0.8em 0;
+}
 </style>
