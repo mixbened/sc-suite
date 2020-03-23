@@ -7,7 +7,7 @@
       </b-container>
       <b-alert show variant="info">
         <div class="text-center"><i class="fa fa-2x fa-info-circle"></i></div>
-        <p><small>Aus gegebenen Anlass finden die Kurse aktuell alle Remote angenehm per Videokonferenz statt. Zudem erhalten Teilnehmer Zugang zu Online Unterstützung durch die Instruktoren. <b>#timeforlearning #stayhomestaysafe</b></small></p>
+        <p><small>Aus gegebenen Anlass finden die Kurse aktuell alle als LIVE-Webinare statt. Zudem erhalten Teilnehmer Zugang zu einem Online-Forum. <b>#timeforlearning #stayhomestaysafe</b></small></p>
       </b-alert>
       <b-container class="position-relative section">
         <!-- <img src="../assets/images/course4.jpeg" class="img-fluid rounded" id="stock" /> -->

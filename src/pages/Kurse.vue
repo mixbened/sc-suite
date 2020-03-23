@@ -3,8 +3,10 @@
     <Title title="Kurse" subtitle="subtitle"/>
       <section class="section">
       <b-container>
-        <small><i class="fa fa-info"></i><b>  Alle Kurse aktuell remote per Video-Konferenz</b></small>
-        <hr>
+      <b-alert show variant="info">
+        <div class="text-center"><i class="fa fa-2x fa-info-circle"></i></div>
+        <p><small>Aus gegebenen Anlass finden die Kurse aktuell alle als LIVE-Webinare statt. Zudem erhalten Teilnehmer Zugang zu einem Online-Forum. <b>#timeforlearning #stayhomestaysafe</b></small></p>
+      </b-alert>        <hr>
         <b-row>
           <b-col v-for="edge in $page.courses.edges" :key="edge.id" sm="4" style="margin-bottom: 50px;">
             <CourseCard :title="edge.node.title" :start="edge.node.start" :dauer="edge.node.duration" :path="edge.node.path" :titleImage="edge.node.titleImage" :ort="edge.node.ort" :excerpt="edge.node.excerpt"/>
