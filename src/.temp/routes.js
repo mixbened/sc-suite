@@ -44,12 +44,12 @@ export default [
     component: () => import(/* webpackChunkName: "page--src--pages--data-privacy-vue" */ "/Users/benediktmix/dev/sc-suite/src/pages/DataPrivacy.vue")
   },
   {
-    path: "/class/",
-    component: () => import(/* webpackChunkName: "page--src--pages--class-vue" */ "/Users/benediktmix/dev/sc-suite/src/pages/Class.vue")
-  },
-  {
     path: "/contact/",
     component: () => import(/* webpackChunkName: "page--src--pages--contact-vue" */ "/Users/benediktmix/dev/sc-suite/src/pages/Contact.vue")
+  },
+  {
+    path: "/class/",
+    component: () => import(/* webpackChunkName: "page--src--pages--class-vue" */ "/Users/benediktmix/dev/sc-suite/src/pages/Class.vue")
   },
   {
     path: "/blog/",

@@ -6,8 +6,8 @@
         <p class="p-2 px-5" style="font-size: 1.3em;">Einfach mal selbst Programmieren - Kurse für Business und Beginner! Wir vermitteln digitale Kompetenzen im Bereich Web und Data - und das praktisch! Damit bilden wir nicht nur Softwareentwickler aus, sondern vermitteln digitale Fähigkeiten an Jeden, der seine Zukunft selbst gestalten will.</p>
       </b-container>
       <b-alert show variant="info">
-        <div class="text-center"><i class="fa fa-2x fa-info-circle"></i></div>
-        <p><small>Aus gegebenen Anlass finden die Kurse aktuell alle als LIVE-Webinare statt. Zudem erhalten Teilnehmer Zugang zu einem Online-Forum. <b>#timeforlearning #stayhomestaysafe</b></small></p>
+        <!-- <div class="text-center"><i class="fa fa-2x fa-info-circle"></i></div> -->
+        <p><i class="fa fa-info-circle"></i> Aus gegebenen Anlass finden die Kurse aktuell alle als LIVE-Webinare statt. Zudem erhalten Teilnehmer Zugang zu einem Online-Forum. <b>#timeforlearning #stayhomestaysafe</b></p>
       </b-alert>
       <b-container class="position-relative section">
         <!-- <img src="../assets/images/course4.jpeg" class="img-fluid rounded" id="stock" /> -->
